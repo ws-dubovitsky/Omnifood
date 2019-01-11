@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
     <link rel="stylesheet" href="resourses/css/style.css" />
+    <link rel="stylesheet" href="resourses/css/queries.css" />
+
     <link
       href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
       rel="stylesheet"
@@ -17,18 +19,23 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="sticky">
         <div class="row">
           <img
             src="resourses/img/logo-white.png"
             alt="Omnifood logo"
             class="logo"
           />
+          <img
+            src="resourses/img/logo.png"
+            alt="Omnifood logo"
+            class="logo-black"
+          />
           <ul class="main-nav">
-            <li><a href="">Food delivery</a></li>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Our cities</a></li>
-            <li><a href="">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
         </div>
       </nav>
@@ -37,11 +44,11 @@
           Goodbye junk food. <br />
           Hello super healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -157,7 +164,7 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row"><h2>How it works &mdash; Simple as 1, 2, 3</h2></div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
@@ -200,7 +207,7 @@
         </div>
       </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row"><h2>We're currently in these cities</h2></div>
       <div class="row">
         <div class="col span-1-of-4 box">
@@ -300,7 +307,7 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row"><h2>Start eating healthy today</h2></div>
       <div class="row">
         <div class="col span-1-of-3">
@@ -414,7 +421,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col span-1-of-3"><label for="email">Email</label></div>
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
               <div class="col span-2-of-3">
                 <input
                   type="email"
@@ -465,8 +474,45 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li>
+              <a href=""><i class="ion-social-facebook"></i> </a>
+            </li>
+            <li>
+              <a href=""><i class="ion-social-twitter"></i> </a>
+            </li>
+
+            <li>
+              <a href=""><i class="ion-social-googleplus"></i> </a>
+            </li>
+            <li>
+              <a href=""><i class="ion-social-instagram"></i> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>Copyright &copy; 2019 by Omnifood. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script src="resourses/js/script.js"></script>
   </body>
 </html>
-
-Section 7: Contact form Title: We're happy to hear from you Fields to include:
-Name Email How did you find us? Newsletter Drop us a line
